@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    width: 300px;
+}
+
+#color-show{
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-size: 24px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#palette {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#palette div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#palette #color-red{
+    background-color: red;
+}
+
+#palette #color-yellow{
+    background-color: yellow;
+}
+
+#palette #color-blue{
+    background-color: blue;
+}
+
+#palette #color-green{
+    background-color: green;
+}

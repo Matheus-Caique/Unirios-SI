@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow';
+}
+
+:root {
+    --color-01: #06C;
+    --color-02: #000;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.titulo-secao{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+#cabecalho {
+    background-color: var(--color-02);
+    margin-bottom: 30px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+#cabecalho #logo {
+    width: 30px;
+}
+
+#cabecalho #menu ul {
+    display: flex;
+}
+
+
+
+#cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho #menu a {
+    color: #FFF;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+#cabecalho #menu a:hover {
+    background-color: var(--color-01);
+}
+
+#cabecalho #menu li {
+    list-style: none;
+}
+
+#cabecalho #menu li .submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--color-02);
+}
+
+#cabecalho #menu li:hover .submenu {
+    display: block;
+}
+ 
+.modelos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.modelos img{
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.modelos h2{
+    margin-bottom: 20px;
+}
+
+.modelos ul{
+    padding-left: 20px;
+}
+
+.modelos ul li{
+    margin-bottom: 10px;
+}
+
+.modelos .but{
+    background-color: var(--color-01);
+    display: block;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s linear;
+}
+
+.modelos .but:hover{
+    background-color: rgb(2, 82, 161);
+}
+
+.historia img {
+    width: 400px;
+    border-radius: 8px;
+    float: left;
+    margin-right: 20px;
+}
+
+.historia p {
+    text-align: justify;
+    margin-bottom: 15px;
+    line-height: 25px;
+}
+
+.fotos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.fotos img{
+    transition: all 0.3s linear;
+}
+
+.fotos img:hover{
+    transform: scale(0.9);
+}
+
+.videos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.videos iframe{
+    width: 100%;
+}
+
+#rodape{
+    text-align: center;
+    background-color: var(--color-02);
+    color: white;
+    margin-top: 50px;
+    padding: 50px;
+}
+
+#rodape a{
+    color: white;
+    text-decoration: none;
+}
+
+#rodape a:hover{
+    color: #06C;
+    text-decoration: underline;
+}

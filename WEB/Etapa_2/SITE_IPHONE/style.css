@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-01: #06C;
+    --color-02: #000;
+}
+
+#cabecalho {
+    background-color: var(--color-02);
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+}
+
+#cabecalho #logo {
+    width: 30px;
+}
+
+#cabecalho #menu ul {
+    display: flex;
+}
+
+
+
+#cabecalho .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cabecalho #menu a {
+    color: #FFF;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+#cabecalho #menu a:hover {
+    background-color: var(--color-01);
+}
+
+#cabecalho #menu li {
+    list-style: none;
+}
+
+#cabecalho #menu li .submenu {
+    display: none;
+    position: absolute;
+    background-color: var(--color-02);
+}
+
+#cabecalho #menu li:hover .submenu {
+    display: block;
+}

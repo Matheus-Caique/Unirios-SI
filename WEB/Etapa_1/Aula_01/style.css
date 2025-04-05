@@ -1,0 +1,119 @@
+/* "*" Rpresenta todos os elementos HTML */
+/* Redefine as propriedades CSS padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* https://cssgradient.io/ -. site doido para fundo */
+body {
+    /* Aplica imagem no fundo site */
+    background-image: url(imagens/fundo.jpg);
+    /* Evita a repetição da imagem no fundo */
+    background-repeat: no-repeat;
+    /* Aplica a imagem de fundo em 100% do fundo */
+    background-size: 100%;
+    /* Deixa a imagem fixa no fundo do site */
+    background-attachment: fixed;
+}
+
+/* Formata todas as DIVs do site */
+div {
+    background-color: #FFFFFF;
+    
+    /* Aplica largura nas DIVs do site */
+    width: 800px;
+
+    /* Aplica um preenchimento interno no elemento */
+    padding: 30px;
+
+    /* Arrendondar os angulos do elementos */
+    border-radius: 30px;
+    
+    /*  Centraliza as DIVs
+    pode ser escrito também desta forma:
+    margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto 0 auto;
+
+    /* Aplicar margem no rodapé do elemento */
+    margin-bottom: 30px;
+}
+
+div img {
+    /* Altera a largura da imagem */
+    width: 150px;
+    /* Define flutuação da imagem para esquerda */
+    float: left;
+    /* Aplica margem no lado direito da imagem */
+    margin-right: 20px;
+}
+
+div p {
+    
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+div h2 {
+    /* Centraliza o texto */
+    text-align: center;
+    /* Define o tamanho da fonte */
+    font-size: 42px;
+
+    margin-bottom: 30px;
+}
+
+#titulo {
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#box-html {
+    /* Aplica borda no elemento */
+    border: 5px solid #FF6600;
+}
+#box-html h2{
+    color: #FF6600;
+}
+
+#box-css {
+    border: 5px solid #0000ff;
+}
+#box-css h2{
+    color: #0000ff;
+}
+
+#box-js {
+    border: 5px solid #ffff00;
+}
+#box-js h2{
+    color: #ffff00;
+}
+
+.btn-saiba-mais {
+    color: #000000;
+
+    /* Define o peso da fonte */
+    font-weight: bold;
+    /* Remove o sublinhado do link */
+    text-decoration: none;
+}
+
+/* Aplica CSS quando o mouse estiver sobre o link '...:hover' */
+.btn-saiba-mais:hover {
+    text-decoration: underline;
+
+}
+
+
+div:hover{
+    width: 900px;
+ }
+
+
+/* '#' para manipular ID's */
+/* '.' para manipular Classes */

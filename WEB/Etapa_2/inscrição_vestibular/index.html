@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario HTML</title>
+</head>
+<!-- Alt+Shift+Baixo Duplica linha -->
+<!-- Alt+Shift+F Organiza o código -->
+<body>
+
+    <h1>Inscrição para vestibular</h1>
+    <form action="">
+        <div>
+            <!-- Label: Rotulo para o campo/input -->
+            <label for="Name">Name</label>
+            <!-- Input: Campo para a entrada de dados -->
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="Data_nasc">Data de nascimento</label>
+            <input type="date" name="Data_nasc" id="Data_nasc">
+        </div>
+        <div>
+            <!-- Required: Deixa o campo obrgatório para prenchimento -->
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <!-- Delect: tipo de campo que permite a seleção de uma das opções -->
+            <label for="curso">Curso</label>
+            <select name="curso" id="curso" required>
+                <option value="">Selecione o Curso</option>
+                <option value="1">Administração</option>
+                <option value="2">Biomedicina</option>
+                <option value="3">Enfermagem</option>
+                <option value="4">Fisioterapia</option>
+                <option value="5">Psicologia</option>
+                <option value="6">Sistemas de Informação</option>
+            </select>
+        </div>
+        <div>
+            <label for="">Gênero</label>
+
+            <input type="radio" name="genero" id="gen-1">
+            <label for="gen-1">Feminino</label>
+            
+            <!-- Type=radio: Seleção bolinha (seleciona apenas um) -->
+            <input type="radio" name="genero" id="gen-2">
+            <label for="gen-2">Maculino</label>
+
+        </div>
+        <div>
+            <label for="">Por onde soube do vestibular</label>
+            <!-- type=check: Seleção quadrado (pode selecionar várias) -->
+            <input type="checkbox" name="divulgação" id="opc-1">
+            <label for="opc-1">Amigo</label>
+            <input type="checkbox" name="divulgação" id="opc-2">
+            <label for="opc-2">Rede Social</label>
+            <input type="checkbox" name="divulgação" id="opc-3">
+            <label for="opc-3">TV</label>
+        </div>
+        <div>
+            <label for="Sugestao">Sugestão</label>
+            <!-- textarea: cria uma caixa de texto pro usuário digitar -->
+            <textarea name="Sugestao" id="Sugestao" cols="30" rows="10" maxlength="20"></textarea>
+        </div>
+        <div>
+            <label for="senha">Crie um senha</label>
+            <input type="password" name="senha" id="senha" required>
+        </div>
+        <div>
+            <button type="submit">Finalizar inscrição</button>
+        </div>
+    </form>
+</body>
+
+</html>
